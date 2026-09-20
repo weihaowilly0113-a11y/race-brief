@@ -664,5 +664,33 @@ ic.innerHTML=document.fullscreenElement?sh:ex});
 })();
 </script>
 
+<script>
+/* 只在投影片真正顯示時才載入並播放影片，避免一開頁就下載 12 MB */
+(function(){
+  function stage(){ return document.querySelector('deck-stage'); }
+  function sync(){
+    var st = stage(); if (!st) return;
+    var secs = st.querySelectorAll(':scope > section');
+    for (var i = 0; i < secs.length; i++) {
+      var s = secs[i];
+      var visible = getComputedStyle(s).visibility !== 'hidden';
+      var vids = s.querySelectorAll('video');
+      for (var j = 0; j < vids.length; j++) {
+        var v = vids[j];
+        if (visible) { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+        else if (!v.paused) { v.pause(); }
+      }
+    }
+  }
+  function init(){
+    var st = stage();
+    if (!st) { setTimeout(init, 200); return; }
+    st.addEventListener('slidechange', function(){ setTimeout(sync, 60); });
+    setTimeout(sync, 300);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 </body>
 </html>
