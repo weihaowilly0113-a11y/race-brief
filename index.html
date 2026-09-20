@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>全國賽會 網站優化計劃｜UI / UX 設計案例研究</title>
+<meta charset="utf-8">
+<meta property="og:title" content="跑者廣場 網站優化計劃｜UI / UX 設計案例研究">
+<meta property="og:type" content="website">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #05081A; }
+  #fsbtn svg, #fsbtn svg path { stroke: var(--fsc, #FFFFFF) !important; fill: none !important; }
+  a { color: #344393; text-decoration: none; }
+  a:hover { color: #FF7A2E; }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
+
+<section data-label="封面" data-screen-label="01" data-speaker-notes="自我介紹。這是 3 人團隊的課堂專案，我負責 UI/UX 設計。工具是 Canva。團隊先共同建立 style guideline 再分頭執行；我在組內設計經驗較多，主動承擔了流程較複雜、需要處理多重狀態的部分。" style="background:#FFFFFF;color:#090E2A;padding:90px 160px 104px;display:flex;flex-direction:column;justify-content:center;gap:40px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif;position:relative;overflow:hidden">
+  <div style="box-sizing: border-box; display: flex; flex-direction: column; align-items: stretch; justify-content: center; width: 1250px; height: 1250px; background-color: #F1600D; border-radius: 50%; position: absolute; left: 1117px; top: -78px; z-index: 0"></div>
+  <img src="assets/cover-runner3.webp" alt="" style="position: absolute; top: 509px; transform: translate(0px, -50%) rotate(-9deg); height: 120%; width: auto; object-fit: contain; pointer-events: none; left: 735px; filter: drop-shadow(-26px 40px 10px rgba(88,26,0,0.5))" fetchpriority="high" decoding="async">
+  <div style="position: relative; display: flex; flex-direction: column; gap: 40px; width: 800px">
+  <div style="font-size: 24px; letter-spacing: 0.1em; color: #F1600D">UI / UX 設計案例研究</div>
+  
+  <h2 style="margin: 0; font-size: 96px; font-weight: 700; line-height: 1.15; letter-spacing: 0.02em; text-align: left; width: 598px; height: 213px">全國賽會<br><span style="color: rgb(241, 96, 13);">網站優化計劃</span></h2><p style="margin: 0; font-size: 28px; font-weight: 400; line-height: 1.5; letter-spacing: 0.04em; color: rgba(9,14,42,0.74); max-width: 900px; width: 800px">把賽事列表重新定位成「搜尋與比較平台」，讓跑者三分鐘內找到適合自己的下一場比賽。</p>
+  <div style="display: flex; gap: 24px; margin-top: 20px">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#090E2A;color:#FFFFFF">3 人團隊專案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#090E2A;color:#FFFFFF">UI / UX 設計</div><div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#090E2A;color:#FFFFFF">2026/06-07</div>
+    
+  </div>
+  </div>
+</section>
+
+<section data-label="專案概況" data-screen-label="02" data-speaker-notes="課程分兩次簡報，但對聽者無意義，不用提。分工要自己先講，不要等對方問：競品分析、SWOT、電腦版 Nav／篩選／排序、手機版 Nav／Footer 由其他成員負責，不列入我的個人成果。團隊先共建 style guideline 再分頭執行，所以模組之間視覺一致。" style="background:#E4E7F3;color:#090E2A;padding:90px 160px 52px;display:flex;flex-direction:column;gap:40px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">專案概況與我負責的範圍</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">這份簡報將聚焦在我執行的設計區塊：賽事卡片、電腦版比較、手機版比較。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;min-height:0">
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:55px;padding:56px;display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:24px;letter-spacing:0.1em;color:#F1600D">研究</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">定義要解決誰的問題</div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 產品價值描述</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 使用者故事與 Persona</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 目標陳述</div>
+      </div>
+    </div>
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:55px;padding:56px;display:flex;flex-direction:column;gap:28px">
+      <div style="font-size:24px;letter-spacing:0.1em;color:#F1600D">設計</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">處理多重狀態的三個模組</div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 賽事卡片</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 電腦版比較：PiP + Overlay</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">— 手機版比較：Bottom Sheet</div>
+      </div>
+    </div>
+    <sc-if value="{{ showBoundaryNote }}" hint-placeholder-val="{{ true }}">
+      <div style="grid-column: 1 / -1; border: 2px solid #DBDDF5; border-radius: 28px; padding: 24px 40px; display: flex; align-items: flex-start; flex-direction: column; flex-wrap: nowrap; justify-content: center; background-color: #F1600D26; border-color: #F1600D; gap: 12px">
+        <div style="font-size: 33px; line-height: 1.5; letter-spacing: 0.04em; color: #FF7A2E; font-weight: 700">團隊分工：</div><div style="font-size: 26px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(9,14,42,0.74)">競品分析、SWOT、兩個裝置的 Nav／篩選／排序／Footer 由另兩位成員負責，本簡報只談我做的部分。</div>
+      </div>
+    </sc-if>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#F1600D;font-family:'Inter','Noto Sans TC',sans-serif">02 / 16</span>
+  </div>
+</section>
+
+<section data-label="問題定義" data-screen-label="03" data-speaker-notes="現有網站資訊量夠，但都是列表。使用者要自己在腦中整理、比較。核心目標訂在「快速找到適合自己的比賽」，把網站重新定位為搜尋與比較平台。" style="background:#E4E7F3;color:#090E2A;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">問題與洞察</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">現有網站沒有讓跑者快速縮小範圍的方法。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 0.8333fr;grid-template-rows:minmax(0,1fr);gap:40px;min-height:0">
+    <div style="border-radius:32px;overflow:hidden;border:2px solid #DBDDF5;background:#FFFFFF;position:relative">
+      <img src="assets/p3-before.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center" loading="lazy" decoding="async">
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: center; gap: 24px; min-height: 0">
+      <div style="flex:1;min-height:0;background:#FFFFFF;border:2px solid #DBDDF5;border-radius:32px;padding:28px 36px;display:flex;flex-direction:column;justify-content:center;gap:12px">
+        <div style="font-size: 30px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #F1600D">搜尋成本過高</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">只能按地區、年份、賽事種類這種概略條件篩，沒辦法再更細緻地縮小範圍。</div>
+      </div>
+      <div style="flex:1;min-height:0;background:#FFFFFF;border:2px solid #DBDDF5;border-radius:32px;padding:28px 36px;display:flex;flex-direction:column;justify-content:center;gap:12px">
+        <div style="font-size: 30px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #F1600D">賽事資訊難以比較</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">好不容易找到，卻要跳去各自的網頁，只能自己記著重點來回比對。</div>
+      </div><div style="flex:1;min-height:0;background:#FFFFFF;border:2px solid #DBDDF5;border-radius:32px;padding:28px 36px;display:flex;flex-direction:column;justify-content:center;gap:12px">
+        <div style="font-size: 30px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #F1600D">資訊呈現方式難以閱讀</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">賽事以長條列表呈現，要一行一行往下掃，讀起來比較費力。</div>
+      </div>
+      
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#F1600D;font-family:'Inter','Noto Sans TC',sans-serif">03 / 16</span>
+  </div>
+</section>
+
+<section data-label="Persona" data-screen-label="04" data-speaker-notes="兩組 Persona 是我做的。重點在 Kevin 的「多場賽事快速比較」——這句話是後面所有比較功能的出發點。Annie 的需求則決定了卡片上要先看到什麼。" style="background:#E4E7F3;color:#090E2A;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">使用者研究</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">我把設計對象收斂成兩位代表性跑者，新手與資深各一位。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;min-height:0">
+    <div style="background: #FFFFFF; border: 2px solid #DBDDF5; border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 32px; min-height: 0">
+      <div style="display:flex;gap:32px;flex:1;min-height:0">
+      <div style="width:280px;height:100%;flex-shrink:0;border-radius:24px;overflow:hidden;position:relative"><img src="assets/slot-persona-annie.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"></div>
+      <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:24px">
+        <div style="font-size:24px;letter-spacing:0.1em;color:#F1600D">新手跑者</div>
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.35; letter-spacing: 0.04em; color: #090E2A">Annie ・ 26歲 ・ 上班族</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">跑過公司的 5K，想挑戰第一場正式賽事，但不知道哪些比賽適合第一次參加。</div>
+        <div style="flex:1"></div>
+      </div>
+      </div>
+      <div style="border-top:2px solid #DBDDF5;padding-top:24px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+        <div style="font-size: 24px; letter-spacing: 0.1em; color: #090E2A">使用者需求</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em">篩出適合新手的比賽，清楚比較日期、距離與報名資訊。</div>
+      </div>
+    </div>
+    <div style="background: #FFFFFF; border: 2px solid #DBDDF5; border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 32px; min-height: 0">
+      <div style="display:flex;gap:32px;flex:1;min-height:0">
+      <div style="width:280px;height:100%;flex-shrink:0;border-radius:24px;overflow:hidden;position:relative"><img src="assets/slot-persona-kevin.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"></div>
+      <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:24px">
+        <div style="font-size:24px;letter-spacing:0.1em;color:#F1600D">進階跑者</div>
+        <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">Kevin ・ 34歲 ・ 工程師</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">每年固定跑 3–5 場，依訓練週期挑賽事，反覆切換賽事頁面比較資訊很費力。</div>
+        <div style="flex:1"></div>
+      </div>
+      </div>
+      <div style="border-top:2px solid #DBDDF5;padding-top:24px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+        <div style="font-size: 24px; letter-spacing: 0.1em; color: #090E2A">使用者需求</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:#F1600D">一次比較多場賽事的重要資訊。</div>
+      </div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#F1600D;font-family:'Inter','Noto Sans TC',sans-serif">04 / 16</span>
+  </div>
+</section>
+
+<section data-label="設計目標" data-screen-label="05" data-speaker-notes="四個目標由研究推導。前兩項是團隊共同處理的搜尋與篩選；後兩項——多賽事比較、跨裝置體驗——正好對應我在第二階段負責的模組，所以接下來的內容都圍繞這兩項。" style="background:#E4E7F3;color:#090E2A;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">設計目標</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">核心目標是讓跑者快速找到適合自己的比賽，這四項就是為此定的。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;min-height:0">
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:40px;padding:48px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:33px;font-weight:700;color:#F1600D">01</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">提升賽事搜尋效率</div>
+      <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">更細緻的篩選條件，讓跑者快速縮小範圍。</div>
+    </div>
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:40px;padding:48px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:33px;font-weight:700;color:#F1600D">02</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">降低資訊理解成本</div>
+      <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">重整資訊的層級，一眼就看得到重點。</div>
+    </div>
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:40px;padding:48px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:33px;font-weight:700;color:#F1600D">03</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">支援多賽事比較</div>
+      <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">選定後能把關鍵欄位並排比對。</div>
+    </div>
+    <div style="background:#FFFFFF;border:2px solid #DBDDF5;border-radius:40px;padding:48px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:33px;font-weight:700;color:#F1600D">04</div>
+      <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em">改善跨裝置使用體驗</div>
+      <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">同一套比較邏輯，電腦和手機都順手。</div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#F1600D;font-family:'Inter','Noto Sans TC',sans-serif">05 / 16</span>
+  </div>
+</section>
+
+<section data-label="設計方案" data-screen-label="06" data-speaker-notes="進入設計環節。這一段講我做的三個模組：賽事卡片、電腦版比較、手機版比較。先讓大家知道接下來會看到什麼，再一個一個展開。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding: 20px 32px; border-radius: 22px; font-size: 24px; line-height: 26px; letter-spacing: 0.02em; color: #FFFFFF; background-color: #F1600D">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">我負責的三個設計</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">從卡片開始，一路看到電腦與手機的比較。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;min-height:0">
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0;min-width:0">
+      <div style="flex:1;width:100%;min-height:0;border-radius:32px;overflow:hidden;position:relative"><img src="assets/slot-p6-card.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"></div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #FF7A2E">賽事卡片</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">挑選賽事的第一步</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0;min-width:0">
+      <div style="flex:1;width:100%;min-height:0;border-radius:32px;overflow:hidden;position:relative"><img src="assets/slot-p6-pc.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"></div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #FF7A2E">電腦版比較</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">PiP 與 Overlay</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0;min-width:0">
+      <div style="flex:1;width:100%;min-height:0;border-radius:32px;overflow:hidden;position:relative"><img src="assets/slot-p6-mobile.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"></div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:8px">
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #FF7A2E">手機版比較</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">Bottom Sheet</div>
+      </div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">06 / 16</span>
+  </div>
+</section>
+
+<section data-label="賽事卡片" data-screen-label="07" data-speaker-notes="卡片是使用者接觸最頻繁的元素。四種資訊狀態 × 三種互動狀態。另外一個容易被忽略的細節：篩選列展開時卡片會自動縮窄、收合後恢復，版面不重排——這是為了讓使用者調整條件時不會失去閱讀位置。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">賽事卡片</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">一張卡片要同時處理報名狀態、互動回饋和篩選連動。</p>
+  </div>
+  <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; min-height: 0">
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0">
+      <div style="flex: 1; min-height: 0; position: relative; border-radius: 32px; overflow: hidden; background: repeating-linear-gradient(135deg,#111A3D 0 12px,#090E2A 12px 24px)">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center">
+          <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">影片：四種報名狀態</div>
+          <sc-if value="{{ showSpecLabels }}" hint-placeholder-val="{{ true }}">
+            <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:24px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">assets/card-status.mp4 ・ 1080 × 1350</div>
+          </sc-if>
+        </div>
+        
+      <video src="assets/card-status.mp4" preload="metadata" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" style="position: relative; width: 120%; height: 120%; object-fit: cover; display: block; left: -10%; top: -5%"></video></div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:26px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">四種資訊狀態</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">開放報名中／即將截止／尚未開放／報名截止</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0">
+      <div style="flex: 1; min-height: 0; position: relative; border-radius: 32px; overflow: hidden; background: repeating-linear-gradient(135deg,#111A3D 0 12px,#090E2A 12px 24px)">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center">
+          <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">影片：hover 與 selected</div>
+          <sc-if value="{{ showSpecLabels }}" hint-placeholder-val="{{ true }}">
+            <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:24px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">assets/card-interaction.mp4 ・ 1080 × 1350</div>
+          </sc-if>
+        </div>
+        <video src="assets/card-interaction.mp4" preload="metadata" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" style="position: relative; width: 120%; height: 120%; left: -10%; top: -5%; object-fit: cover; display: block"></video>
+      </div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:26px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">三種互動狀態</div>
+        <div style="font-size: 26px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(219,221,245,0.78); height: 78px">default／hover／selected</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;min-height:0">
+      <div style="flex: 1; min-height: 0; position: relative; border-radius: 32px; overflow: hidden; background: repeating-linear-gradient(135deg,#111A3D 0 12px,#090E2A 12px 24px)">
+        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center">
+          <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">影片：與篩選列連動</div>
+          <sc-if value="{{ showSpecLabels }}" hint-placeholder-val="{{ true }}">
+            <div style="font-family:'Inter','Noto Sans TC',sans-serif;font-size:24px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">assets/card-filter.mp4 ・ 1080 × 1350</div>
+          </sc-if>
+        </div>
+        <video src="assets/card-filter.mp4" preload="metadata" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" style="position: relative; width: 100%; height: 100%; object-fit: cover; background: #090E2A; display: block"></video>
+      </div>
+      <div style="flex-shrink:0;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:26px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">與篩選列連動</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">篩選列展開時卡片縮窄，收合後恢復，版面不重排</div>
+      </div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">07 / 16</span>
+  </div>
+</section>
+
+<section data-label="打勾換數字" data-screen-label="08" data-speaker-notes="第一次驗收時老師點出：使用者瀏覽列表時不會主動打開已選清單，所以不知道自己選了幾場。打勾只能表達「有選」，數字還能表達「進度」。這是整個專案裡最小、但最直接改善資訊回饋的一次修改。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">從打勾到數字</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">收到使用者回饋後，我把選中狀態從打勾改成編號，一眼就看得出選到第幾場。</p>
+  </div>
+  <div style="flex:1;display:flex;gap:40px;min-height:0">
+    <div style="flex: 1; border: 2px solid rgba(219,221,245,0.32); border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
+      <div style="flex:1;position:relative;border-radius:32px;overflow:hidden;border:2px solid rgba(219,221,245,0.32);background:#090E2A">
+        <img src="assets/p7-before.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center" loading="lazy" decoding="async">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(to top, rgba(9,14,42,0.96) 30%, rgba(9,14,42,0.6) 70%, rgba(9,14,42,0));display:flex;flex-direction:column;gap:6px;z-index:1">
+          <div style="font-size:24px;letter-spacing:0.1em;color:#FFFFFF">改版前</div>
+          <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em;color:#FFFFFF">選中顯示打勾</div>
+        </div>
+      </div>
+      <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">只表達「這張有被選」，進度得另外打開清單才知道。</div>
+    </div>
+    <div style="flex: 1; border: 2px solid #FF7A2E; background: rgba(241,96,13,0.12); border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
+      <div style="flex:1;position:relative;border-radius:32px;overflow:hidden;border:2px solid rgba(219,221,245,0.32);background:#090E2A">
+        <img src="assets/p7-after.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center" loading="lazy" decoding="async">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(to top, rgba(9,14,42,0.96) 30%, rgba(9,14,42,0.6) 70%, rgba(9,14,42,0));display:flex;flex-direction:column;gap:6px;z-index:1">
+          <div style="font-size: 24px; letter-spacing: 0.1em; color: #FFFFFFEB">改版後</div>
+          <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em;color:#FFFFFF">選中顯示編號</div>
+        </div>
+      </div>
+      <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em">改版後的卡片狀態一看就知道目前已加入幾場。</div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">08 / 16</span>
+  </div>
+</section>
+
+<section data-label="兩個設計原則" data-screen-label="09" data-speaker-notes="比較為什麼重要，前面 Kevin 的 Persona 與目標③已經講過，這裡不重複。這頁講的是我怎麼設計：兩個原則。原則一，常駐但不擋路——已選清單要一直在、隨時能查看與移除，但不能打斷使用者繼續逛列表，這是 PiP 與 Bottom Sheet 共同的出發點，回應目標③支援多賽事比較。原則二，同一套邏輯、跨裝置一致——比較的三步（挑選、查看、詳細比較）不變，只有容器隨裝置換，使用者換裝置不用重學，回應目標④跨裝置體驗。後面每一頁都是在實踐這兩條。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">比較功能的兩個設計原則</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">透過設計原則，讓比較成為挑賽事時自然的一部分。</p>
+  </div>
+  <div style="flex:1;display:flex;align-items:center;gap:40px;min-height:0">
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; text-align: left; height: 100%">
+      <div style="font-family: 'Inter','Noto Sans TC',sans-serif; font-size: 28px; letter-spacing: 0.1em; color: #FF7A2E; font-weight: 700; width: 100%">不擋住主要畫面<br></div>
+      <div style="font-size: 28px; line-height: 1.7; letter-spacing: 0.04em; color: rgba(219,221,245,0.78); text-wrap: balance; text-align: justify">選了幾場一目了然，且不影響主要流程。</div>
+    </div>
+    <div style="position: relative; height: 88%; aspect-ratio: 1.9 / 1; flex-shrink: 0">
+      <div style="position:absolute;left:0;top:0;height:100%;aspect-ratio:1 / 1;border-radius:50%;border:2px solid #FF7A2E;background:rgba(255,122,46,0.12)"></div>
+      <div style="position:absolute;right:0;top:0;height:100%;aspect-ratio:1 / 1;border-radius:50%;border:2px solid #7C8AE0;background:rgba(124,138,224,0.14)"></div>
+      <div style="position:absolute;left:8%;top:0;bottom:0;width:37%;display:flex;flex-direction:column;justify-content:center;gap:14px;text-align:center">
+        <div style="font-family: 'Inter','Noto Sans TC',sans-serif; font-size: 33px; letter-spacing: 0.1em; color: #FF7A2E">原則一</div>
+        <div style="font-size:40px;font-weight:700;line-height:1.25;letter-spacing:0.04em">不擋住主要畫面</div>
+      </div>
+      <div style="position: absolute; right: 8%; top: 0; bottom: 0; width: 37%; display: flex; flex-direction: column; justify-content: center; gap: 14px; text-align: center">
+        <div style="font-family: 'Inter','Noto Sans TC',sans-serif; font-size: 33px; letter-spacing: 0.1em; color: #9AA6EC">原則二</div>
+        <div style="font-size:40px;font-weight:700;line-height:1.25;letter-spacing:0.04em">跨裝置一致體驗</div>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 16px; text-align: center; height: 100%">
+      <div style="font-family: 'Inter','Noto Sans TC',sans-serif; font-size: 28px; letter-spacing: 0.1em; color: #9AA6EC; font-weight: 700; width: 100%; text-align: left">跨裝置一致體驗</div>
+      <div style="font-size: 28px; line-height: 1.7; letter-spacing: 0.04em; color: rgba(219,221,245,0.78); text-wrap: balance; text-align: justify">同一套比較邏輯，換了裝置也不用重新適應。</div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">09 / 16</span>
+  </div>
+</section>
+
+<section data-label="電腦版 PiP" data-screen-label="10" data-speaker-notes="設計限制：左側已被篩選欄佔滿，沒有空間再放常駐清單。參考 Gmail 的撰寫信件視窗——浮在右下角、不佔版面配置、可收合、隨時點開；Meta 系的聊天視窗也是同一個模式。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">電腦版比較：PiP(子母畫面)</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">比較清單要能一直在，又不打斷瀏覽，子母畫面的設計剛好能兩者兼顧。</p>
+  </div>
+  <div style="flex:1;display:flex;gap:40px;min-height:0;align-items:stretch">
+    <div style="flex:1.2;min-height:0;border-radius:32px;overflow:hidden;background:#111A3D">
+      <video src="assets/pip.mp4" preload="metadata" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;gap:32px;min-width:0">
+      <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #FF7A2E">PiP的三種狀態：</div><div style="flex: 1; min-height: 0; background: rgba(219,221,245,0.10); border-radius: 40px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 14px">
+        <div style="font-size:28px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">收合</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">收合時只留一列已選數量，不佔畫面。</div>
+      </div>
+      <div style="flex: 1; min-height: 0; background: rgba(219,221,245,0.10); border-radius: 40px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 14px">
+        <div style="font-size:28px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">展開</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">已選賽事的概略資訊，可逐筆移除。</div>
+      </div>
+      <div style="flex: 1; min-height: 0; background: rgba(219,221,245,0.10); border-radius: 40px; padding: 40px; display: flex; flex-direction: column; justify-content: center; gap: 14px">
+        <div style="font-size:28px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">彈窗</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">三場賽事 × 五個關鍵欄位的完整對照。</div>
+      </div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">10 / 16</span>
+  </div>
+</section>
+
+<section data-label="比較欄位" data-screen-label="11" data-speaker-notes="欄位是從「賽事資訊的完備性」推導的，不是直接從 Persona。事後檢視，排最上面的日期、費用、距離、報名資訊與兩位 Persona 共同關心的項目高度吻合，兩條路徑互相印證。比較上限 3 場來自 Apple 的比較基準與 contextual compare 的縱向容量——這個數字在改採 Sony 模式後我沒有重新檢視，若被問到，我認為有機會放寬。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">電腦版比較：Overlay<span style="letter-spacing: 0.02em; text-wrap-mode: initial;">(比較彈窗)</span></h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">從各家賽事都有的欄位出發，決定要比什麼、怎麼排、最多比幾場。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1.15fr;grid-template-rows:minmax(0,1fr);gap:40px;min-height:0">
+    <div style="display: flex; flex-direction: column; gap: 32px; min-height: 0">
+      <div style="flex:1;min-height:0;background:rgba(219,221,245,0.10);border-radius:40px;padding:32px 40px;display:flex;flex-direction:column;justify-content:center;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">比較欄位怎麼選？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">盤點各家賽事的資訊，只保留幾乎每場都提供的欄位。</div>
+      </div>
+      <div style="flex:1;min-height:0;background:rgba(219,221,245,0.10);border-radius:40px;padding:32px 40px;display:flex;flex-direction:column;justify-content:center;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">欄位順序怎麼排？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">把跑者最先看的費用、狀態、日期放在最上面。</div>
+      </div>
+      <div style="flex:1;min-height:0;background:rgba(219,221,245,0.10);border-radius:40px;padding:32px 40px;display:flex;flex-direction:column;justify-content:center;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">上限為什麼是 3 場？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">參考 Apple 的比較上限，讓電腦和手機都比最多 3 場。</div>
+      </div>
+    </div>
+    <div style="min-height:0;display:flex;align-items:center;justify-content:center">
+      <img src="assets/overlay-mockup.webp" alt="Overlay 比較表 mockup" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block; border-radius: 40px" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">11 / 16</span>
+  </div>
+</section>
+
+<section data-label="手機版三次迭代" data-screen-label="12" data-speaker-notes="第一版直接搬電腦版的表格邏輯，是這次最明顯的誤判——手機版不是電腦版的縮小版。第二版改縱向堆疊，但要多點一次「進一步比較」。第三版把比較整合進 Bottom Sheet，用底部 Tab Bar 切換分類。Tab 橫向空間有限，欄位名稱被迫縮短，與電腦版用語不一致。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">手機版比較：Bottom Sheet<span style="letter-spacing: 0.02em; text-wrap-mode: initial;">(</span>底部面板<span style="letter-spacing: 0.02em; text-wrap-mode: initial;">)</span></h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">經過三次迭代，讓比較不用跳頁、在同一個面板完成。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;min-height:0;grid-auto-rows:minmax(0,1fr)">
+    <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0">
+      <div style="flex:1;min-height:0;border-radius:32px;overflow:hidden;border:2px solid rgba(219,221,245,0.32);background:#0E1533;display:flex;align-items:center;justify-content:center">
+        <img src="assets/p11-01.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
+      </div>
+      <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><div style="font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em">V1 ・ 照搬表格</div><div style="font-size: 26px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(219,221,245,0.78)">三欄橫向並排，螢幕太窄，視線左右來回。</div></div>
+      
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0">
+      <div style="flex:1;min-height:0;border-radius:32px;overflow:hidden;border:2px solid rgba(219,221,245,0.32);background:#0E1533;display:flex;align-items:center;justify-content:center">
+        <img src="assets/p11-02.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
+      </div>
+      <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><div style="font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em">V2 ・ 改成縱向</div><div style="font-size: 26px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(219,221,245,0.78)">符合手機閱讀習慣，但比較結果多一層跳轉。</div></div>
+      
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 20px; min-height: 0">
+      <div style="flex:1;min-height:0;border-radius:32px;overflow:hidden;border:2px solid #FF7A2E;background:#0E1533;display:flex;align-items:center;justify-content:center">
+        <img src="assets/p11-03.webp" alt="" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
+      </div>
+      <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><div style="font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em; color: #FF7A2E">V3 ・ 不跳頁完成比較</div><div style="font-size: 26px; line-height: 1.5; letter-spacing: 0.04em; color: rgba(219,221,245,0.78)">Tab Bar 切換基本資訊／地點／路線／關門時間。</div></div>
+      
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">12 / 16</span>
+  </div>
+</section>
+
+<section data-label="第四版" data-screen-label="13" data-speaker-notes="第二次驗收被指出：使用者切換分類後會忘記前一個分類看過的細節。回頭檢視，問題出在參考對象的情境不同——Apple 比的是同系列產品，使用者本來就熟悉，切分類時腦中有印象可以填補；路跑賽事類型繁多、使用者不熟悉，切走就真的忘了。所以改採 Sony 的比較頁邏輯，讓資訊留在同一個平面。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">重新看待使用者情境</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">第三版沿用了 Apple 的分類切換，卻忽略跑者對賽事不熟，切走就會忘記剛看過什麼。</p>
+  </div>
+  <div style="flex:1;display:flex;gap:40px;min-height:0">
+    <div style="flex: 1; border: 2px solid rgba(219,221,245,0.32); border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
+      <div style="flex: 1; min-height: 0; position: relative; border-radius: 32px; overflow: hidden; background: #0E1533; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; border: 2px solid rgba(219,221,245,0.32)">
+        <img src="assets/p12-v3.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:56px 32px 32px;background:linear-gradient(to top, rgba(9,14,42,0.98) 22%, rgba(9,14,42,0.82) 48%, rgba(9,14,42,0.45) 72%, rgba(9,14,42,0));display:flex;flex-direction:column;gap:6px;z-index:1;text-align:left">
+          <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em;color:#FFFFFF">點 Tab 切換整頁內容</div><div style="font-size:24px;letter-spacing:0.1em;color:#FFFFFF">第三版：參考 Apple 購買頁</div>
+        </div>
+      </div>
+      <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.72)">忘記時要切回原分類重新查看；Tab 寬度也迫使欄位名稱與電腦版不同。</div>
+    </div>
+    <div style="flex: 1; border: 2px solid #F1600D; background: rgba(241,96,13,0.10); border-radius: 40px; padding: 32px; display: flex; flex-direction: column; gap: 24px">
+      <div style="flex: 1; min-height: 0; position: relative; border-radius: 32px; overflow: hidden; background: #0E1533; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; border: 2px solid rgba(219,221,245,0.32)">
+        <img src="assets/p12-v4.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async">
+        <div style="position:absolute;bottom:0;left:0;right:0;padding:56px 32px 32px;background:linear-gradient(to top, rgba(9,14,42,0.98) 22%, rgba(9,14,42,0.82) 48%, rgba(9,14,42,0.45) 72%, rgba(9,14,42,0));display:flex;flex-direction:column;gap:6px;z-index:1;text-align:left">
+          <div style="font-size:33px;font-weight:700;line-height:1.35;letter-spacing:0.04em;color:#FFFFFF">滑動看完已選賽事的比較</div><div style="font-size: 24px; letter-spacing: 0.1em; color: #FFFFFF">第四版：參考 Sony 產品比較頁</div>
+        </div>
+      </div>
+      <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em">比較的資訊都在同一頁，欄位左右並排，與電腦版的使用邏輯相同，用詞也一致。</div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">13 / 16</span>
+  </div>
+</section>
+
+<section data-label="分享結果" data-screen-label="14" data-speaker-notes="驗收時另一個被指出可惜之處：比較完卻無法把結果帶走。跑者選賽事常是揪團行為。輸出選單張直式長圖 PNG——聊天視窗可直接預覽、不需下載；PDF 承載力高但在手機上會變成要另外點開的檔案。按鈕寫「分享結果」而非「下載結果」，因為系統原生分享面板本來就含「儲存圖片」，一個入口涵蓋兩種需求。分享前的預覽畫面尚未定案。" style="background:#090E2A;color:#FFFFFF;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:rgba(219,221,245,0.10);color:rgba(219,221,245,0.78)">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">分享結果：比較的終點動作</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">收到回饋後才意識到結果無法分享很可惜，於是規畫了分享功能。</p>
+  </div>
+  <div style="flex:1;display:grid;grid-template-columns:0.8333fr 1fr;gap:40px;min-height:0">
+    <div style="border-radius:32px;overflow:hidden;position:relative">
+      <img src="assets/p14-share.webp" alt="分享結果長圖" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center" loading="lazy" decoding="async">
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:space-between">
+      <div style="background:rgba(219,221,245,0.10);border-radius:40px;padding:40px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">為什麼是單張長圖 PNG？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">通訊軟體與社群限動可直接預覽、不需下載、生成也快。</div>
+      </div>
+      <div style="background:rgba(219,221,245,0.10);border-radius:40px;padding:40px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">為什麼不是 PDF？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">承載力較高，但在手機上變成要另外點開的檔案，多一道摩擦。</div>
+      </div>
+      <div style="background:rgba(219,221,245,0.10);border-radius:40px;padding:40px;display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:30px;font-weight:700;line-height:1.3;letter-spacing:0.04em;color:#FF7A2E">怎麼分享出去？</div>
+        <div style="font-size:26px;line-height:1.55;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">點分享時，網頁把比較結果生成一張長圖，再交給手機系統的分享功能傳出去。</div>
+      </div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(219,221,245,0.78)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#FF7A2E;font-family:'Inter','Noto Sans TC',sans-serif">14 / 16</span>
+  </div>
+</section>
+
+<section data-label="反思" data-screen-label="15" data-speaker-notes="驗證來自課堂上的專家評估與同儕回饋，不是真實使用者測試。它有效地指出了介面邏輯問題（打勾換數字、Tab Bar 換左右滑），但回饋者不是跑者，也沒有量化數據。若有後續，我會優先驗證：使用者是否真的會在報名前比較多場、上限 3 場是否足夠、左右滑動能否被自然發現。" style="background:#E4E7F3;color:#090E2A;padding:90px 160px 52px;display:flex;flex-direction:column;gap:26px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif">
+  <div style="height:66px;display:flex;gap:12px;flex-shrink:0">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">問題與洞察</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">使用者研究</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">設計方案</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#FFFFFF;color:rgba(9,14,42,0.74)">改版</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#F1600D;color:#FFFFFF">反思</div>
+  </div>
+  <div style="height:129px;display:flex;flex-direction:column;gap:8px;flex-shrink:0">
+    <h2 style="margin:0;font-size:66px;font-weight:700;line-height:1.2;letter-spacing:0.02em">反思與學習</h2>
+    <p style="margin:0;font-size:28px;font-weight:400;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">做完這個專案，我更清楚好設計要對得上使用者的情境，也要經得起追問。</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 40px; min-height: 0">
+    <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; min-height: 0">
+      <div style="background: #FFFFFF; border: 2px solid #DBDDF5; border-radius: 40px; padding: 56px; display: flex; flex-direction: column; gap: 12px; justify-content: center">
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em">參考對象的情境要跟自己的對得上</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">Apple 的分類切換適用於熟悉的同系列產品，不適用陌生的路跑賽事。</div>
+      </div>
+      <div style="background: #FFFFFF; border: 2px solid #DBDDF5; border-radius: 40px; padding: 56px; display: flex; flex-direction: column; gap: 12px; justify-content: center">
+        <div style="font-size: 33px; font-weight: 700; line-height: 1.3; letter-spacing: 0.04em">設計決策要說得出依據</div>
+        <div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">PiP 參考 Gmail、比較欄位取交集、上限參考 Apple，每個決定都有來由。</div>
+      </div>
+    </div>
+    <div style="border: 2px solid #DBDDF5; border-radius: 28px; padding: 24px 40px; flex-shrink: 0; display: flex; align-items: flex-start; background-color: #F1600D26; border-color: #F1600D; flex-direction: column; gap: 12px">
+      <div style="font-size: 33px; line-height: 1.5; letter-spacing: 0.04em; color: #F1600D; font-weight: 700">驗證限制：</div><div style="font-size:26px;line-height:1.5;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">本次調整依據課堂專家評估與同儕回饋，非真實使用者測試，亦無量化數據。</div>
+    </div>
+  </div>
+  <div style="height:39px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;font-size:24px;line-height:26px;letter-spacing:0.04em;color:rgba(9,14,42,0.74)">
+    <span>跑者廣場 網站優化計劃｜UI / UX 設計</span>
+    <span style="color:#F1600D;font-family:'Inter','Noto Sans TC',sans-serif">15 / 16</span>
+  </div>
+</section>
+
+<section data-label="結尾" data-screen-label="16" data-speaker-notes="留時間問答。準備好回答：團隊分工細節、比較上限 3 場、分享前的預覽畫面、若有真實使用者測試會怎麼設計。" style="background:#FFFFFF;color:#090E2A;padding:90px 160px 104px;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:40px;font-family:'Inter','Noto Sans TC','PingFang TC',sans-serif;position:relative;overflow:hidden">
+  <div style="box-sizing: border-box; width: 1250px; height: 1250px; background-color: #F1600D; border-radius: 50%; position: absolute; left: -540px; top: -78px; z-index: 0"></div>
+  <img src="assets/end-runner.webp" alt="" style="position: absolute; left: -316px; top: 489px; transform: translate(0px, -50%) rotate(261deg); object-fit: contain; pointer-events: none; filter: drop-shadow(-30px 34px 10px rgba(88,26,0,0.5)); z-index: 0; width: 1460px" loading="lazy" decoding="async">
+  <div style="position: relative; display: flex; flex-direction: column; align-items: baseline; text-align: left; gap: 40px; z-index: 1; justify-content: space-evenly">
+  
+  <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 0px"><h2 style="margin: 0; font-size: 96px; font-weight: 700; line-height: 1.15; letter-spacing: 0.02em; text-align: left; width: 920px; color: #F1600D">Thanks<br></h2><h2 style="margin: 0; font-size: 96px; font-weight: 700; line-height: 1.15; letter-spacing: 0.02em; text-align: left; width: 920px">for your attention!</h2></div>
+  <p style="margin: 0; font-size: 28px; font-weight: 400; line-height: 1.5; letter-spacing: 0.04em; color: rgba(9,14,42,0.74); max-width: 760px; width: 920px; display: none">卡片、PiP、Overlay、Bottom Sheet 的完整狀態與四個版本的迭代紀錄都可以現場翻。</p>
+  <div style="display: flex; gap: 24px; margin-top: 20px">
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#090E2A;color:#FFFFFF">Wei-hao Huang</div>
+    <div style="padding:20px 32px;border-radius:22px;font-size:24px;line-height:26px;letter-spacing:0.02em;background:#090E2A;color:#FFFFFF"><a href="https://www.behance.net/e80a02a0" target="_blank" rel="noopener noreferrer" style="color: #F8F9F9">Behance</a></div>
+  </div>
+  </div>
+</section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSpecLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;素材佔位&quot;},&quot;showBoundaryNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;內容&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showSpecLabels: this.props.showSpecLabels ?? true,
+      showBoundaryNote: this.props.showBoundaryNote ?? true,
+    };
+  }
+}
+</script>
+<div id="fsbtn" title="全螢幕" style="position:fixed;top:24px;right:24px;z-index:99999;width:52px;height:52px;border-radius:14px;background:rgba(0,0,0,0.42);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0.5;transition:opacity .18s,background .18s;color:#FFFFFF;-webkit-tap-highlight-color:transparent"><svg id="fsicon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"/></svg></div>
+<script>
+(function(){
+var b=document.getElementById('fsbtn'),ic=document.getElementById('fsicon');
+var ex='<path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"/>';
+var sh='<path d="M9 4v4a1 1 0 0 1-1 1H4M15 4v4a1 1 0 0 0 1 1h4M9 20v-4a1 1 0 0 0-1-1H4M15 20v-4a1 1 0 0 1 1-1h4"/>';
+b.onmouseenter=function(){b.style.opacity='1';b.style.background='#F1600D'};
+b.onmouseleave=function(){b.style.opacity='0.5';b.style.background='rgba(0,0,0,0.42)'};
+b.onclick=function(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+document.addEventListener('fullscreenchange',function(){
+var ds=document.querySelector('deck-stage');
+if(ds){var ov=ds.shadowRoot&&ds.shadowRoot.querySelector('.overlay');if(document.fullscreenElement){ds.setAttribute('no-rail','');if(ov)ov.style.display='none';}else{ds.removeAttribute('no-rail');if(ov)ov.style.display='';}}
+setTimeout(function(){window.dispatchEvent(new Event('resize'))},60);
+ic.innerHTML=document.fullscreenElement?sh:ex});
+})();
+</script>
+
+</body>
+</html>
